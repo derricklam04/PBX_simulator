@@ -1,9 +1,12 @@
-# telephone_simulator
+# PBX_simulator
 Simulation of PBX(Private Branch Exchange) network implemented in C. Features multithreading for simultaneous actions between different extensions.
 Allow users to create/end extensions, dial/pickup/end calls, and send messages
 
 ## Installation
-```make clean debug```
+```
+cd ../PBX_simulator
+make clean debug
+```
 
 ## Usage
 
@@ -20,6 +23,9 @@ hangup
 dial <extensionnumber> 
 chat <msg> # sends a message to its currently connected extension
 ```
+
+To close server socket (in new terminal):
+```kill -HUP <tid>```
 
 ## Built With
 <ul><li>CSAPP Library (csapp.h)</li></ul>
